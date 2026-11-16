@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>1KB space </title>
+<style>
+body{font-family:sans-serif;max-width:500px;margin:40px auto;padding:20px;background:#1a1a1a;color:#eee;text-align:center}
+a{color:#00ffcc}
+#t{font-size:3em;font-family:monospace;margin:20px 0;color:#00ffcc}
+</style>
+</head>
+<body>
+<h1> heres a clock for waitng idk 
+<div id="t">00:00</div>
+<p>Fully functional clock under 1,024 bytes should fit here </p>
+<hr>
+<p><a href="https://1kbclub.com" target="_blank">1KB Club</a></p>
+<script>
+function u(){
+let d=new Date(),h=d.getHours(),m=d.getMinutes();
+document.getElementById('t').innerText=(h<10?'0':'')+h+':'+(m<10?'0':'')+m;
+}
+setInterval(u,1000);u();
+</script>
+</body>
+</html>
